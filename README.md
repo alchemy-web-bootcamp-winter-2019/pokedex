@@ -1,4 +1,4 @@
-# Pokedex
+# Willem's Pokedex
 
 Show pokedex cards, by page.
 
