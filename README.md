@@ -1,4 +1,4 @@
-# Pokedex
+# Laura's Pokedex
 
 Show pokedex cards, by page.
 
