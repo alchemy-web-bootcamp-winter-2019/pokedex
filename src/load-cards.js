@@ -17,8 +17,8 @@ export function makeCardTemplate(card) {
 }
 
 export default function loadCards(cardData) {
-    console.log('hi');
     const parent = document.getElementById('card-list');
+    
     cardData.forEach(card => {
         const content = makeCardTemplate(card);
         parent.appendChild(content);
