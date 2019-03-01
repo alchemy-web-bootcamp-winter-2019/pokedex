@@ -1,0 +1,23 @@
+#card-gallery{
+    display:flex;
+    flex-direction:row;
+    flex-flow: row wrap;
+}
+
+#card-gallery li{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    margin:8px;
+
+    height:200px;
+    width:200px;
+    border: 2px solid red;
+    list-style: none;
+}
+
+#card-gallery img{
+    height:100px;
+    width:100px;
+}
