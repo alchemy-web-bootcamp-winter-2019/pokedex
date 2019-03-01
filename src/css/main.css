@@ -13,7 +13,7 @@
     height: 320px;
     margin: 8px;
     border-radius: 15px;
-    box-shadow: 2px 2px 2px grey;
+    box-shadow: 3px 3px 3px grey;
 }
 
 #pokemon-cards li:hover {
