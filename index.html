@@ -14,19 +14,26 @@
         <h3 class="bounce">Click on a Pokémon to learn more!</h3>
     </header>
     <main>
-        <p>
-            <button id="previous-button">&lt; Previous</button>
-            Page
-                <span id="current-page"></span>
-            of
-                <span id="total-pages"></span>
-            <button id="next-button">Next &gt;</button>
-        </p>
-        
-        <ul id="pokemon-cards">
+        <section>
+            <ul id="pokemon-cards">
 
-        </ul>
+            </ul>
+        </section>
+
+        <section id="paging-section">
+                <p>
+                    <button id="previous-button" class="button">&lt; Previous</button>
+                    Page
+                        <span id="current-page"></span>
+                    of
+                        <span id="total-pages"></span>
+                    <button id="next-button" class="button">Next &gt;</button>
+                </p>
+            </section>
     </main>
+    <footer>
+        <p>&copy; Leslie Shea</p>
+    </footer>
     <script type="module" src="./src/index.js"></script>
 </body>
 </html>

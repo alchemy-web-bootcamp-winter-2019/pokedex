@@ -1,3 +1,5 @@
+// function that takes two arguments: an array of stuff and paging options
+// paging options includes the current page you are on and how many items displayed on the page
 export default function pageArray(testPageArray, pagingOptions) {
     const page = pagingOptions.page;
     const perPage = pagingOptions.perPage;
