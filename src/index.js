@@ -4,4 +4,6 @@ import loadPaging from './paging-component.js';
 
 loadCards(cards);
 
-loadPaging(cards.length);
+loadPaging(cards.length, pagingOptions => {
+    console.log(pagingOptions);
+});
