@@ -43,3 +43,8 @@ li h2 {
     text-transform: capitalize;
     align-self: center;
 }
+
+#paging-component {
+    display: flex;
+    justify-content: space-around;
+}
