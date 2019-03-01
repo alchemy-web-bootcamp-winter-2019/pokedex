@@ -13,6 +13,9 @@ export function makePokemonCard(card) {
 const pokedexList = document.getElementById('pokedex-list');
 
 export default function loadCards(cards) {
+    while(pokedexList.firstChild) {
+        pokedexList.firstChild.remove();
+    }
     cards.forEach(card => {
         const dom = makePokemonCard(card);
         pokedexList.appendChild(dom);
