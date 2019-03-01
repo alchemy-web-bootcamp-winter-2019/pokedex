@@ -40,7 +40,7 @@ test('test templat making machine', assert => {
 
 
     const expected = /*html*/`
-        <li>
+        <li style="background-color:#78C850">
             <h2>bulbasaur</h2>
             <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png">
             <p> HP:45 D:49 A:49 </p>

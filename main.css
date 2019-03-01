@@ -21,3 +21,14 @@
     height:100px;
     width:100px;
 }
+
+#paging-ui {
+    list-style: none;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+}
+
+#paging-ui p{
+  margin: 5px;
+}
