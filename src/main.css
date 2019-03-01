@@ -1,15 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  background: lightslategray;
+}
+
+header {
+  background-color: red;
+}
 #poke-display {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
 }
+
 #poke-display li {
   display: flex;
   flex-direction: column;
   align-items: center;
   list-style: none;
   border: 3px solid black;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   margin: 4px;
 }
 #poke-display img {
