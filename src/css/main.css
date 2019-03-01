@@ -1,0 +1,56 @@
+#pokemon-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+#pokemon-cards li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 230px;
+    height: 320px;
+    margin: 8px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px grey;
+}
+
+#pokemon-cards li:hover {
+    filter: brightness(115%);
+}
+
+#pokemon-cards img {
+    width: 65%;
+}
+
+h1 {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 45px;
+}
+
+#pokemon-cards h3 {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+#pokemon-cards p {
+    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-size: 18px;
+}
+
+.type_2 {
+    display: inline-block;
+    border: 1px solid black;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    margin: 0px 0px 0px 8px;
+}
+
+.stats {
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 13px 5px 13px;
+}
