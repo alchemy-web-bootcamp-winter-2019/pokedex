@@ -1,8 +1,6 @@
 
 const test = QUnit.test;
-
 QUnit.module('pokeman card creation');
-function createCard() {
 
 const pokemon = {
     'pokemon': 'bulbasaur',
@@ -37,13 +35,14 @@ const pokemon = {
     'pokedex': 'http://www.pokemon.com/us/pokedex/bulbasaur'
 };
 
+function createCard() {
     const html = /*html*/ `
         <li>
             <p>${pokemon.pokemon}</p>
-            <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png">
-            <p>hp: 45</p>
-            <p> attack: 49</p>
-            <p>defense: 49</p>
+            <img src="${pokemon.url_image}">
+            <p>hp: ${pokemon.hp}</p>
+            <p> attack: ${pokemon.attack}</p>
+            <p>defense: ${pokemon.defense}</p>
         </li>
     `;
     //I need to get this so that it becomes dom to be inserted
@@ -56,6 +55,7 @@ const pokemon = {
         return dom;
     }
 }
+
 
 test('createCard function to render cards dynamically', assert => {
     //arrange
