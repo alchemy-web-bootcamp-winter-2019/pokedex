@@ -1,4 +1,5 @@
 import './html-equal.js';
+import makePokeTemplate from '../src/make-poke-template.js';
 
 const test = QUnit.test;
 
@@ -14,25 +15,6 @@ const pokemon = {
     'color_f': '#81A763',
     'url_image': 'http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png'
 };
-
-function makePokeTemplate(pokemon) {
-    let htmlTemplate = `
-    <li style=" border: 5px solid ${pokemon.color_1};">
-        <h2>${pokemon.pokemon} <span class="type_2" style=" background-color: ${pokemon.color_2};"></span></h2>
-        <img src="${pokemon.url_image}" alt="${pokemon.pokemon}">
-        <div>
-        HP: <span id="hp">${pokemon.hp}</span>
-        Attack: <span id="attack">${pokemon.attack}</span>
-        Defense: <span id="defense">${pokemon.defense}</span>
-        </div>
-    </li>`;
-
-    const template = document.createElement('template');
-    template.innerHTML = htmlTemplate;
-
-    return template.content;
-
-}
 
 test('function produces pokemon template', assert => {
     //arrange
