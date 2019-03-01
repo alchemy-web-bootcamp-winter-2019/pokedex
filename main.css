@@ -15,6 +15,16 @@ h1 {
     text-align: center;
 }
 
+button {
+    padding: 8px;
+    background-color: rgb(247, 245, 179);
+    border-radius: 5px;
+    font-size: 1em;
+}
+button:hover {
+    box-shadow: 5px 5px 5px greenyellow;
+}
+
 #pokemon-gallery {
     list-style: none;
     display: flex;
@@ -30,6 +40,8 @@ li {
     padding: 2px;
     margin: 5px;
     border-radius: 5px;
+    height: 350px;
+    width: 250px;
 }
 
 li:hover {
