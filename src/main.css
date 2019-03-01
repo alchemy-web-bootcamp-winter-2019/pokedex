@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=36785aff&noise=cf76cf&density=100&opacity=84);
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 10%;
+    margin: 5px;
+    list-style: none;
+    padding: 3px;
+    justify-content: center;
+    text-align: center;
+}
+
+li img {
+    width: 100%;
+}
