@@ -17,10 +17,10 @@ export function changePage(listLength, callback) {
    });
    prevButton.addEventListener('click', () => {
       currentPageNumber--;
-      updatePageNav()
+      updatePageNav();
    });
 
-   function updatePageNav () {
+   function updatePageNav() {
       prevButton.disabled = currentPageNumber === 1;
       nextButton.disabled = currentPageNumber === totalPagesNumber;
       currentPage.textContent = currentPageNumber;
@@ -31,7 +31,4 @@ export function changePage(listLength, callback) {
       callback(pageInfo);
    }
 }
-   
-
-
 
