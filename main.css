@@ -31,6 +31,7 @@ h3 {
     margin-left: 10px;
 }
 
-#pokedex-card img {
+#pokedex-list img {
     width: 80%;
+    margin-left: 25px;
 }
