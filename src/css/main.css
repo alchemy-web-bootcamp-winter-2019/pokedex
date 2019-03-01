@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'pokemon-GB';
+    src: url('../../fonts/pokemon-GB.eot'); /* IE9 Compat Modes */
+    src: url('../../fonts/pokemon-GB.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../fonts/pokemon-GB.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../fonts/pokemon-gb.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../fonts/pokemon-GB.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../fonts/pokemon-GB.svg#svgFontName') format('svg');
+  }
+
+  @font-face {
+    font-family: 'pokemon-solid';
+    src: url('../../fonts/pokemon-solid.eot'); /* IE9 Compat Modes */
+    src: url('../../fonts/pokemon-solid.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../../fonts/pokemon-solid.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../../fonts/pokemon-solid.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../../fonts/pokemon-solid.ttf')  format('truetype'), /* Safari, Android, iOS */
+         url('../../fonts/pokemon-solid.svg#svgFontName') format('svg');
+  }
+
 #pokemon-cards {
     display: flex;
     flex-wrap: wrap;
@@ -11,6 +31,9 @@
     margin: 8px;
     border-radius: 15px;
     box-shadow: 2px 2px 2px grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #pokemon-cards li:hover {
@@ -26,24 +49,26 @@ a {
     color: black;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;;
     align-items: center;
 }
 
 h1 {
-    font-family: 'ZCOOL QingKe HuangYou', cursive;
+    font-family: 'pokemon-solid';
     font-size: 45px;
 }
 
 #pokemon-cards h3 {
-    font-family: 'ZCOOL QingKe HuangYou', cursive;
-    font-size: 25px;
+    font-family: 'pokemon-GB';
+    font-size: 12px;
     text-transform: capitalize;
+    margin: -25px 0px 20px 0px;
 }
 
 #pokemon-cards p {
-    font-family: 'ZCOOL QingKe HuangYou', cursive;
-    font-size: 18px;
+    font-family: 'pokemon-GB';
+    font-size: 10px;
+    margin: 40px 0px 0px 0px;
 }
 
 .type_2 {

@@ -6,8 +6,8 @@ export function makePokedexTemplate(pokedex) {
             <h3>${pokedex.pokemon}<div class="type_2" style="background-color: ${pokedex.color_2}"></div></h3>
             <img src="${pokedex.url_image}">
             <p class="stats">
-                <span>HP: ${pokedex.hp} | </span>
-                <span>A: ${pokedex.attack} | </span>
+                <span>HP: ${pokedex.hp}</span>
+                <span>A: ${pokedex.attack}</span>
                 <span>D: ${pokedex.defense}</span>
             </p>
         </a>
