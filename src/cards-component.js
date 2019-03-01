@@ -20,10 +20,18 @@ export function makePokedexTemplate(pokedex) {
 // function that uses forEach loop to generate the pokedex and calls on makePokedexTemplate function
 export default function loadPokedex(pokedex) {
     const pokemonCards = document.getElementById('pokemon-cards');
+    clearCurrentPokedex(pokemonCards);
+    
     // for each card in the pokedex, create the li element using the makePokedexTemplate function
     // append every li to the ul (pokemonCards)
     pokedex.forEach(pokemon => {
         const pokemonCard = makePokedexTemplate(pokemon);
         pokemonCards.appendChild(pokemonCard);
     });
+}
+
+function clearCurrentPokedex(pokemonCards) {
+    while(pokemonCards.firstChild) {
+        pokemonCards.firstChild.remove();
+    }
 }
