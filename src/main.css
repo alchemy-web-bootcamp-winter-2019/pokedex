@@ -26,6 +26,7 @@ li {
     justify-content: center;
     margin-top: 5px;
     border-radius: 3px;
+    text-align: center;
 }
 
 li img {
@@ -40,4 +41,5 @@ li a {
 
 li h2 {
     text-transform: capitalize;
+    align-self: center;
 }
