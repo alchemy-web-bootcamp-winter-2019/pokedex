@@ -6,9 +6,9 @@ const totalPages = document.getElementById('total-pages');
 let currentPageNumber = 1;
 currentPage.textContent = currentPageNumber;
 
-export function changePage(pokeList) {
+export function changePage(listLength, callback) {
    const PER_PAGE = 100;
-   let totalPagesNumber = Math.ceil(pokeList.length / PER_PAGE);
+   let totalPagesNumber = Math.ceil(listLength / PER_PAGE);
    totalPages.textContent = totalPagesNumber;
    updatePageNav();
    nextButton.addEventListener('click', () => {
@@ -24,6 +24,11 @@ export function changePage(pokeList) {
       prevButton.disabled = currentPageNumber === 1;
       nextButton.disabled = currentPageNumber === totalPagesNumber;
       currentPage.textContent = currentPageNumber;
+      const pageInfo = {
+         currentPage: currentPageNumber,
+         perPage: PER_PAGE
+      };
+      callback(pageInfo);
    }
 }
    
