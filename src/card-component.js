@@ -9,3 +9,12 @@ export function makePokemonCard(card) {
     template.innerHTML = html;
     return template.content;
 }
+
+const pokedexList = document.getElementById('pokedex-list');
+
+export default function loadCards(cards) {
+    cards.forEach(card => {
+        const dom = makePokemonCard(card);
+        pokedexList.appendChild(dom);
+    });
+}
