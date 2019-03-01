@@ -23,7 +23,6 @@ export default function loadDisplay(pokemonList) {
    });
 }
 
- clearD
 function clearDisplay() {
    while(pokeDisplay.firstChild) {
       pokeDisplay.firstChild.remove();
