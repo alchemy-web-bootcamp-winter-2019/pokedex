@@ -1,8 +1,10 @@
 const test = QUnit.test;
 
+import createListItem from '../src/create-list-component.js';
+
 test('test templat making machine', assert => {
     //assign
-    const pokedexObject = {
+    const pokedex =  {
         'pokemon': 'bulbasaur',
         'id': 1,
         'species_id': 1,
@@ -36,19 +38,7 @@ test('test templat making machine', assert => {
 
     };
 
-    function createListItem(img) {
-        const template = document.createElement('template');
-        const html = /*html*/`
-            <li>
-                <h2>bulbasaur</h2>
-                <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png">
-                <p> HP:45 D:49 A:49 </p>
-            </li>
-        `;
-        template.innerHTML = html;
-        return template.content;
 
-    }
     const expected = /*html*/`
         <li>
             <h2>bulbasaur</h2>
@@ -57,7 +47,7 @@ test('test templat making machine', assert => {
         </li>
     `;
     //act
-    const actual = createListItem(pokedexObject);
+    const actual = createListItem(pokedex);
     //assert
     assert.htmlEqual(actual, expected);
 });
