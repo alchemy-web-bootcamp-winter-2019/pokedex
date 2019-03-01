@@ -1,4 +1,5 @@
 import { makePokedexTemplate } from '../src/cards-component.js';
+
 const test = QUnit.test;
 
 QUnit.module('make pokedex template');

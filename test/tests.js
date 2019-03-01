@@ -1,2 +1,3 @@
 import './html-equal.js';
-import '../test/cards-component.test.js';
+import './cards-component.test.js';
+import './page-array.test.js';
