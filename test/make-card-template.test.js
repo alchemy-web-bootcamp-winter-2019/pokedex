@@ -1,16 +1,5 @@
 const test = QUnit.test;
-
-function makePokemonCard(card) {
-    const html = /*html*/
-        `<li id="pokedex-card">
-        <h3>bulbasaur<div class="type_2"></div></h3>
-        <a href="http://www.pokemon.com/us/pokedex/bulbasaur"><img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"></a>
-        <p>HP: 45 A: 49 D: 49</p>
-        </li>`;
-    const template = document.createElement('template');
-    template.innerHTML = html;
-    return template.content;
-}
+import { makePokemonCard } from '../src/card-component.js';
 
 test('make card template', assert => {
     //arrange
@@ -26,8 +15,8 @@ test('make card template', assert => {
     };
 
     const expected = /*html*/
-        `<li id="pokedex-card">
-        <h3>bulbasaur<div class="type_2"></div></h3>
+        `<li style="background-color: #78C850">
+        <h3>bulbasaur<div class="type_2" style="background-color: #A040A0"></div></h3>
         <a href="http://www.pokemon.com/us/pokedex/bulbasaur"><img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png"></a>
         <p>HP: 45 A: 49 D: 49</p>
         </li>`;
