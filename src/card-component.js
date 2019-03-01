@@ -1,3 +1,11 @@
+const pokedexList = document.getElementById('pokedex-list');
+
+export default function loadCards(pokedex) {
+    pokedex.forEach(pokemon => {
+        const dom = createCard(pokemon);
+        pokedexList.appendChild(dom);
+    });
+}
 
 export function createCard(pokemon) {
     const html = /*html*/`

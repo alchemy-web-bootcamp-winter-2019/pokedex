@@ -1,4 +1,4 @@
-import { createCard } from "../src/card-component.js";
+import { createCard } from '../src/card-component.js';
 
 const test = QUnit.test;
 
