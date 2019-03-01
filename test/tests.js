@@ -1,5 +1,5 @@
 import './html-equal.js';
-import './card-component.js';
+import './card-component.test.js';
 
 // const test = QUnit.test;
 // QUnit.module('pokeman card creation');
