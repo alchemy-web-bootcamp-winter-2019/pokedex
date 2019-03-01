@@ -10,9 +10,9 @@ h1 {
 
 #paging-display {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    max-width: 500px;
+    text-align: center;
 }
 
 #pokemon-gallery {
@@ -34,6 +34,7 @@ li {
 
 li:hover {
     box-shadow: 3px 3px 3px grey;
+    background-color: rgb(247, 245, 179);
 }
 
 img {
