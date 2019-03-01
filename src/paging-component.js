@@ -23,9 +23,6 @@ export default function loadPaging(totalCount, callback) {
         updatePaging();
     });
 
-
-
-
     function updatePaging() {
         currentPage.textContent = currentPageNumber;
         const pagingOptions = {
