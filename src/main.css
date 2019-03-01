@@ -1,0 +1,17 @@
+#poke-display {
+  display: flex;
+  flex-direction: row;
+}
+#poke-display li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  border: 3px solid black;
+  width: 150px;
+  height: 150px;
+  margin: 4px;
+}
+#poke-display img {
+  width: 40%;
+}
