@@ -5,7 +5,7 @@ const totalPages = document.getElementById('total-pages');
 
 const PER_PAGE = 21;
 
-export default function loadPaging(totalPokedex) {
+export default function loadPaging(totalPokedex, callback) {
     const totalPageCount = Math.ceil(totalPokedex / PER_PAGE);
     totalPages.textContent = totalPageCount;
     
@@ -21,7 +21,7 @@ export default function loadPaging(totalPokedex) {
             currentPage: currentPageCount,
             perPage: PER_PAGE
         };
-        console.log(pagingOptions);
+        callback(pagingOptions);
     }
 
     previousButton.addEventListener('click', () => {

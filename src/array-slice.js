@@ -5,7 +5,5 @@ export default function arraySlice(array, pagingOptions) {
     const start = (currentPage - 1) * perPage;
     const end = start + perPage;
 
-    console.log('start', start, 'end', end);
-
     return array.slice(start, end);
 }
