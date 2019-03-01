@@ -5,12 +5,15 @@ const totalPagesSpan = document.getElementById('total-pages');
 const PER_PAGE = 20;
 
 export default function loadPaging(total, callback) {
+    let currentPage = 1;
     const pages = Math.ceil(total / PER_PAGE);
     totalPagesSpan.textContent = pages;
-    let currentPage = 1;
     updatePaging();
     function updatePaging() {
         currentPageSpan.textContent = currentPage;
+        callback(currentPage, PER_PAGE);
+        previousButton.disabled = currentPage === 1;
+        nextButton.disabled = currentPage === pages;
     }
     nextButton.addEventListener('click', () => {
         currentPage++;
@@ -21,6 +24,4 @@ export default function loadPaging(total, callback) {
         currentPage--;
         updatePaging();
     });
-
-    callback();
 }

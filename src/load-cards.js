@@ -18,7 +18,9 @@ export function makeCardTemplate(card) {
 
 export default function loadCards(cardData) {
     const parent = document.getElementById('card-list');
-    
+    while(parent.firstChild) {
+        parent.firstChild.remove();
+    }
     cardData.forEach(card => {
         const content = makeCardTemplate(card);
         parent.appendChild(content);
