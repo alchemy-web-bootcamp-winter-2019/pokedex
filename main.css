@@ -1,0 +1,36 @@
+#pokedex-list {
+    list-style-type: none;
+    padding: 0px;
+    display: inline-block;
+}
+
+li {
+    border: 3px solid cornflowerblue;
+    height: 250px;
+    width: 190px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 8px;
+    float: left;
+    background-color: #78C850;
+}
+
+h3 {
+    text-transform: capitalize;
+}
+
+.type_2 {
+    height: 20px;
+    width: 20px;
+    background-color: #A040A0;
+    display: inline-block;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+
+#pokedex-card img {
+    width: 80%;
+}
