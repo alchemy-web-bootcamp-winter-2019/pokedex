@@ -5,15 +5,12 @@
 }
 
 #pokemon-cards li {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    list-style: none;
     width: 230px;
     height: 320px;
     margin: 8px;
     border-radius: 15px;
-    box-shadow: 3px 3px 3px grey;
+    box-shadow: 2px 2px 2px grey;
 }
 
 #pokemon-cards li:hover {
@@ -22,6 +19,15 @@
 
 #pokemon-cards img {
     width: 65%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
@@ -42,11 +48,12 @@ h1 {
 
 .type_2 {
     display: inline-block;
-    border: 1px solid black;
+    /* border: 1px solid black; */
     width: 20px;
     height: 20px;
     border-radius: 20px;
     margin: 0px 0px 0px 8px;
+    box-shadow: 2px 2px 2px black;
 }
 
 .stats {
