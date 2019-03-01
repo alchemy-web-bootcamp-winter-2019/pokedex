@@ -46,5 +46,6 @@ li h2 {
 
 #paging-component {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    margin-top: 5px;
 }

@@ -7,4 +7,3 @@ loadPaging(pokedex.length, pagingOptions => {
     const pagedPokedex = arraySlice(pokedex, pagingOptions);
     loadCards(pagedPokedex);
 });
-loadCards(pokedex);

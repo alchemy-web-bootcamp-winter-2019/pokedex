@@ -1,10 +1,17 @@
 const pokedexList = document.getElementById('pokedex-list');
 
 export default function loadCards(pokedex) {
+    clearCards();
     pokedex.forEach(pokemon => {
         const dom = createCard(pokemon);
         pokedexList.appendChild(dom);
     });
+}
+
+function clearCards() {
+    while(pokedexList.children.length > 0) {
+        pokedexList.lastElementChild.remove();
+    }
 }
 
 export function createCard(pokemon) {
