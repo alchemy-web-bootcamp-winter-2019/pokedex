@@ -6,10 +6,10 @@ import loadSort from './sort-component.js';
 import sortByChoice from './sort-by-choice.js';
 
 loadDisplay(pokemonList);
-// changePage(pokemonList.length, (pageInfo) => {
-//    const paged = pageArray(pokemonList, pageInfo);
-//    loadDisplay(paged); 
-// });
+changePage(pokemonList.length, (pageInfo) => {
+   const paged = pageArray(pokemonList, pageInfo);
+   loadDisplay(paged); 
+});
 
 loadSort(sortOption => {
    const sorted = sortByChoice(pokemonList, sortOption);
@@ -17,4 +17,6 @@ loadSort(sortOption => {
       const paged = pageArray(pokemonList, pageInfo);
       loadDisplay(paged); 
    });
+   
 });
+

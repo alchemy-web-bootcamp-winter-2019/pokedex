@@ -3,10 +3,10 @@ const nextButton = document.getElementById('next');
 const currentPage = document.getElementById('current-page');
 const totalPages = document.getElementById('total-pages');
 
-let currentPageNumber = 1;
-currentPage.textContent = currentPageNumber;
 
 export function changePage(listLength, callback) {
+   let currentPageNumber = 1;
+   currentPage.textContent = currentPageNumber;
    const PER_PAGE = 20;
    let totalPagesNumber = Math.ceil(listLength / PER_PAGE);
    totalPages.textContent = totalPagesNumber;
