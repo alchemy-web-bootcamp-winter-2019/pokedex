@@ -1,10 +1,6 @@
 const test = QUnit.test;
 
-function paginatePokemon(allPokemon, paginateParams){
-    const startingIndex = (paginateParams.numberOfPokemon * paginateParams.page) - paginateParams.numberOfPokemon;
-    const endingIndex = (paginateParams.numberOfPokemon * paginateParams.page);
-    return allPokemon.slice(startingIndex, endingIndex); 
-}
+import paginatePokemon from '../src/paginate.js';
 
 
 test('test 4 pokemon per page, on page 2 ', assert =>{

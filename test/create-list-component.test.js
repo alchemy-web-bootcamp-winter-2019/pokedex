@@ -1,6 +1,6 @@
 const test = QUnit.test;
 
-import createListItem from '../src/create-list-component.js';
+import { createListItem } from '../src/create-list-component.js';
 
 test('test templat making machine', assert => {
     //assign
