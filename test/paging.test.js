@@ -1,4 +1,4 @@
-import getPage from '../src/paging.js'
+import getPage from '../src/paging.js';
 
 const test = QUnit.test;
 

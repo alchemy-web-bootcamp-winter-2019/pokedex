@@ -1,0 +1,54 @@
+const test = QUnit.test;
+
+const testData = [
+    {
+        pokemon: 'bulbasaur',
+        type_1: 'grass',
+        hp: 45
+    },
+    {
+        pokemon: 'squirtle',
+        type_1: 'water',
+        hp: 44
+    },
+    {
+        pokemon: 'charmander',
+        type_1: 'fire',
+        hp: 39
+    },
+];
+
+function sortData(data, sortKey) {
+    return data.sort((a, b) => {
+        if(a[sortKey] === b[sortKey]) {
+            return 0;
+        }
+        if(a[sortKey] < b[sortKey]) {
+            return -1;
+        }
+        return 1;
+    });
+}
+
+test('sort by Pokemon', assert => {
+    const sortKey = 'Pokemon';
+    const expected = [
+        {
+            pokemon: 'bulbasaur',
+            type_1: 'grass',
+            hp: 45
+        },
+        {
+            pokemon: 'charmander',
+            type_1: 'fire',
+            hp: 39
+        },
+        {
+            pokemon: 'squirtle',
+            type_1: 'water',
+            hp: 44
+        },
+    ];
+    const sorted = sortData(testData, sortKey); 
+    assert.deepEqual(sorted, expected);
+});
