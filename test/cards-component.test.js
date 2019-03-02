@@ -21,7 +21,7 @@ test('make pokedex template', assert => {
     `<li style="background-color: #78C850" class="threed">
         <a href="http://www.pokemon.com/us/pokedex/bulbasaur" target="_blank">
             <h3>Bulbasaur<div class="type_2" style="background-color: #A040A0"></div></h3>
-            <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png">
+            <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" class="shake">
             <p class="stats">
                 <span>HP: 45</span>
                 <span>A: 49</span>

@@ -135,3 +135,78 @@ footer {
     font-family: 'pokemon-solid';
     font-size: 12px;
 }
+
+@-webkit-keyframes shake
+{
+    15%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-2px);
+        transform: translateX(-2px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(1px);
+        transform: translateX(1px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+@keyframes shake
+{
+    15%
+    {
+        -webkit-transform: translateX(3px);
+        transform: translateX(3px);
+    }
+    30%
+    {
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+    }
+    50%
+    {
+        -webkit-transform: translateX(2px);
+        transform: translateX(2px);
+    }
+    65%
+    {
+        -webkit-transform: translateX(-2px);
+        transform: translateX(-2px);
+    }
+    80%
+    {
+        -webkit-transform: translateX(1px);
+        transform: translateX(1px);
+    }
+    100%
+    {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+.shake:hover
+{
+        -webkit-animation: shake 0.5s ease;
+        animation: shake 0.5s ease;
+        -webkit-animation-iteration-count: 1;
+        animation-iteration-count: 1;
+}
