@@ -1,10 +1,15 @@
-import pokedex from '../data/pokedex.js';
-import loadPokedex from '../src/cards-component.js';
-import loadPaging from '../src/paging-component.js';
-import pageArray from '../src/page-array.js';
+const formNode = document.getElementById('user-form');
 
-loadPaging(pokedex.length, pagingOptions => {
-    const pagedPokedex = pageArray(pokedex, pagingOptions);
+formNode.addEventListener('submit', function(event) {
+    event.preventDefault();
     
-    loadPokedex(pagedPokedex);
+    const formData = new FormData(formNode);
+
+    const user = {
+        name: formData.get('name')
+    };
+
+    const json = JSON.stringify(user);
+    window.localStorage.setItem('user', json);
+    window.location = '../pokedex.html';
 });
