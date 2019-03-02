@@ -128,12 +128,12 @@ footer {
     display: flex;
     justify-content: center;
     font-family: 'pokemon-gb';
-    font-size: 8px;
+    font-size: 9px;
 }
 
 .button {
     font-family: 'pokemon-solid';
-    font-size: 10px;
+    font-size: 12px;
 }
 
 
