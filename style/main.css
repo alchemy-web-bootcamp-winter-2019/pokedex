@@ -15,6 +15,11 @@
     align-items: center;
     justify-content: space-between;
     margin: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.671);
+}
+
+#card-list li:hover {
+    filter:brightness(150%);
 }
 
 #card-list img {
