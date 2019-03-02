@@ -22,7 +22,7 @@ export default function loadPaging(totalCount, callback) {
         };
 
         nextButton.disabled = currentPageNumber === totalPageCount;
-        previousButton.dispabled = currentPageNumber === 1;
+        previousButton.disabled = currentPageNumber === 1;
 
         callback(pagingOptions);
     }
