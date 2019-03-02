@@ -32,7 +32,6 @@ body {
 
 label {
   font-family: 'pokemon-GB';
-
 }
 
 footer {
@@ -45,4 +44,11 @@ footer {
 
 #user-form {
   margin: 20%;
+}
+
+button {
+  font-family: 'pokemon-GB';
+  font-size: 8px;
+  width: 80px;
+  height: 20px;
 }
