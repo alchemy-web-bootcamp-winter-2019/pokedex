@@ -7,7 +7,7 @@ let currentPageNumber = 1;
 currentPage.textContent = currentPageNumber;
 
 export function changePage(listLength, callback) {
-   const PER_PAGE = 100;
+   const PER_PAGE = 20;
    let totalPagesNumber = Math.ceil(listLength / PER_PAGE);
    totalPages.textContent = totalPagesNumber;
    updatePageNav();
@@ -28,6 +28,7 @@ export function changePage(listLength, callback) {
          currentPage: currentPageNumber,
          perPage: PER_PAGE
       };
+      console.log(pageInfo);
       callback(pageInfo);
    }
 }
