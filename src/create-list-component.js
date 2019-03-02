@@ -1,4 +1,3 @@
-import pokedex from "../data/pokedex.js";
 
 export function createListItem(pokemon) {
     const template = document.createElement('template');
@@ -13,14 +12,11 @@ export function createListItem(pokemon) {
     return template.content;
 }
 
-
 export default function renderPokemon(pokemonToBeRendered) {
     const pokedexNode = document.getElementById('card-gallery');
     while(pokedexNode.children.length > 0) {
         pokedexNode.removeChild(pokedexNode.lastChild);
     }
-
-
 
     pokemonToBeRendered.forEach(pokemon => {
         const listItem = createListItem(pokemon);
