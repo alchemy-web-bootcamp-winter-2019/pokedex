@@ -18,7 +18,7 @@ const pokedex = {
 test('make pokedex template', assert => {
     const result = makePokedexTemplate(pokedex);
     const expected = /*html*/
-    `<li style="background-color: #78C850">
+    `<li style="background-color: #78C850" class="threed">
         <a href="http://www.pokemon.com/us/pokedex/bulbasaur" target="_blank">
             <h3>Bulbasaur<div class="type_2" style="background-color: #A040A0"></div></h3>
             <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png">
