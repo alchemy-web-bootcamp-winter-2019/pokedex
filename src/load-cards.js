@@ -1,3 +1,5 @@
+const parent = document.getElementById('card-list');
+
 export function makeCardTemplate(card) {
     const html = `<li style="background-color: ${card.color_1}">
     <h2>${card.pokemon}</h2>
@@ -17,8 +19,7 @@ export function makeCardTemplate(card) {
 }
 
 export default function loadCards(cardData) {
-    const parent = document.getElementById('card-list');
-    while(parent.firstChild) {
+    while(parent && parent.firstChild) {
         parent.firstChild.remove();
     }
     cardData.forEach(card => {

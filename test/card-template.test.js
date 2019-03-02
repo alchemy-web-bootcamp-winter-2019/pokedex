@@ -1,6 +1,6 @@
 import './html-equal.js';
 import pokedex from '../data/pokedex.js';
-import { makeCardTemplate } from '../src/load-cards.js';
+import { makeCardTemplate }  from '../src/load-cards.js';
 
 const test = QUnit.test;
 

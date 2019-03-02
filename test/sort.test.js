@@ -1,3 +1,5 @@
+import sortData from '../src/sorting.js';
+
 const test = QUnit.test;
 
 const testData = [
@@ -18,20 +20,10 @@ const testData = [
     },
 ];
 
-function sortData(data, sortKey) {
-    return data.sort((a, b) => {
-        if(a[sortKey] === b[sortKey]) {
-            return 0;
-        }
-        if(a[sortKey] < b[sortKey]) {
-            return -1;
-        }
-        return 1;
-    });
-}
+
 
 test('sort by Pokemon', assert => {
-    const sortKey = 'Pokemon';
+    const sortKey = 'pokemon';
     const expected = [
         {
             pokemon: 'bulbasaur',
