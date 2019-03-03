@@ -28,7 +28,8 @@ li {
     border: 2px solid black;
     border-radius: 5px;
     width: 10%;
-    margin: 5px;
+    min-width: 89px;
+    margin: 3px;
     list-style: none;
     padding: 3px;
     justify-content: center;
@@ -37,4 +38,8 @@ li {
 
 li img {
     width: 100%;
+}
+
+#pokename {
+    text-transform: capitalize;
 }

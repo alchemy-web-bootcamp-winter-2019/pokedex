@@ -1,5 +1,6 @@
 import './html-equal.js';
 import './card-component.test.js';
+import './filter-component.test.js';
 
 // const test = QUnit.test;
 // QUnit.module('pokeman card creation');

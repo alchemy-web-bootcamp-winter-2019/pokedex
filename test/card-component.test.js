@@ -43,7 +43,7 @@ test('createCard function to render cards dynamically', assert => {
     const expected = /*html*/ `
        <li style="background-color: #78C850;
             background-image: linear-gradient(#78C850, #A040A0, #81A763)">
-            <p>bulbasaur</p>
+            <p id="pokename">bulbasaur</p>
             <img src="http://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png">
             <p>hp: 45</p>
             <p> attack: 49</p>
