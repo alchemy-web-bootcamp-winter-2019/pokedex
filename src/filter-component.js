@@ -23,4 +23,11 @@ export default function buildTypeFilter(types) {
         //append to typeFilterNode
         typeFilterNode.appendChild(dom);
     });
+    //event Listener is only for the node, not each item. Looking for select change
+    typeFilterNode.addEventListener('change', () => {
+        const chosenType = {
+            type_1: typeFilterNode.value
+        };
+        console.log(chosenType);
+    });
 }
