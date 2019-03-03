@@ -24,6 +24,10 @@ export function createCard(pokemon) {
 }
 
 export default function loadCards(pokedex) {
+    while(cardBin.children.length > 0) {
+        cardBin.lastElementChild.remove();
+    }
+
     pokedex.forEach(pokemon => {
         const dom = createCard(pokemon);
         cardBin.appendChild(dom);
