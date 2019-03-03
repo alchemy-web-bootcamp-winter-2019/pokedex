@@ -8,6 +8,11 @@ body {
     background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=36785aff&noise=cf76cf&density=100&opacity=84);
 }
 
+h1 {
+    text-align: center;
+    padding: 10px;
+}
+
 ul {
     display: flex;
     flex-wrap: wrap;
@@ -16,7 +21,7 @@ ul {
     max-width: 75%;
     margin: auto;
     padding: 2%;
-
+    justify-content: center;
 }
 
 li {

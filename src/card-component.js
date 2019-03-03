@@ -3,7 +3,9 @@ const cardBin = document.getElementById('card-bin');
 
 export function createCard(pokemon) {
     const html = /*html*/ `
-        <li>
+        <li style=
+            "background-color: ${pokemon.color_1};
+            background-image: linear-gradient(${pokemon.color_1}, ${pokemon.color_2}, ${pokemon.color_f})">
             <p>${pokemon.pokemon}</p>
             <img src="${pokemon.url_image}">
             <p>hp: ${pokemon.hp}</p>
