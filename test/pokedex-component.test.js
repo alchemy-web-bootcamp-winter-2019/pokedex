@@ -1,17 +1,7 @@
+import pageArray from '../src/pokedex-component.js';
 const test = QUnit.test;
 
 QUnit.module('allow to paginate through pokedex');
-
-function pageArray(testArray, pagingOptions){
-    const page = pagingOptions.page;
-    const perPage = pagingOptions.perPage;
-
-    const startIndex = ((page - 1) * perPage);
-    const endIndex = perPage + startIndex;
-
-    return testArray.slice(startIndex, endIndex);
-}
-
 
 const testArray = [
     'one',
@@ -41,16 +31,30 @@ test('page 1 of 4 perPage', assert => {
     assert.deepEqual(result, expected);
 });
 
-test('page 1 of 4 perPage', assert => {
+test('page 2 of 4 perPage', assert => {
     //arrange
     const pagingOptions = {
-        page: 1,
+        page: 2,
         perPage: 4
     };
 
     //act
     const result = pageArray(testArray, pagingOptions);
-    const expected = ['one', 'two', 'three', 'four'];
+    const expected = ['five', 'six', 'seven', 'eight'];
+    //assert
+    assert.deepEqual(result, expected);
+});
+
+test('page 3 of 4 perPage', assert => {
+    //arrange
+    const pagingOptions = {
+        page: 3,
+        perPage: 4
+    };
+
+    //act
+    const result = pageArray(testArray, pagingOptions);
+    const expected = ['nine', 'ten', 'eleven'];
     //assert
     assert.deepEqual(result, expected);
 });
