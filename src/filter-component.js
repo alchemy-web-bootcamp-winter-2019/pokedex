@@ -1,7 +1,8 @@
+const typeFilterNode = document.getElementById('type-filter');
 
 
 
-const types = ['normal', 'fighting', 'flying', 'poison', 'ground', 'rock',
+export const types = ['normal', 'fighting', 'flying', 'poison', 'ground', 'rock',
     'bug', 'ghost', 'steel', 'fire', 'water', 'grass', 'electric', 'psychic',
     'ice', 'dragon', 'dark', 'fairy'
 ];
@@ -16,3 +17,5 @@ export function buildTypeFilter(types) {
     const dom = template.content;
     return dom;
 }
+
+

@@ -1,4 +1,4 @@
-import { buildTypeFilter } from '../src/filter-component.js';
+import { getTypeOptions } from '../src/filter-component.js';
 
 const test = QUnit.test;
 QUnit.module('filter by type 1');
@@ -14,7 +14,7 @@ test('populate type filter options dynamically', assert => {
     `;
 
     //act
-    const result = buildTypeFilter(types);
+    const result = getTypeOptions(types);
 
     console.log('result', result);
     console.log('expected', expected);
