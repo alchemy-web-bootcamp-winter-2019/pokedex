@@ -1,7 +1,14 @@
 import pokedex from '../data/pokedex.js';
 import { types } from '../src/filter-component.js';
 import loadCards from '../src/card-component.js';
-import buildTypeFilter from '../src/filter-component.js';
+import buildByTypeFilter from '../src/filter-component.js';
+import filterPokedex from '../src/filter-pokedex.js';
 
 loadCards(pokedex);
-buildTypeFilter(types);
+buildByTypeFilter(types, chosenTypes => {
+    const filteredPokedex = filterPokedex(pokedex, chosenTypes);
+    loadCards(filteredPokedex);
+    console.log('filteredPokedex', filteredPokedex);
+});
+
+//I have a callback of chosenTypes hanging around from buildTypeFilter's event listener

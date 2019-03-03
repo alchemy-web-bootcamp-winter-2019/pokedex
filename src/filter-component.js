@@ -16,7 +16,7 @@ export function getTypeOptions(type) {
     return dom;
 }
 
-export default function buildTypeFilter(types) {
+export default function buildByTypeFilter(types, callback) {
     types.forEach(type => {
         //create dom for the node
         const dom = getTypeOptions(type);
@@ -28,7 +28,7 @@ export default function buildTypeFilter(types) {
         const chosenType = {
             type_1: typeFilterNode.value
         };
-        console.log(chosenType);
+        callback(chosenType);
     });
 }
 
