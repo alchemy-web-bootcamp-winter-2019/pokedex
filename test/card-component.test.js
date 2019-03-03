@@ -1,4 +1,4 @@
-
+import { createCard } from '../src/card-component.js';
 const test = QUnit.test;
 QUnit.module('pokeman card creation');
 
@@ -35,31 +35,11 @@ const pokemon = {
     'pokedex': 'http://www.pokemon.com/us/pokedex/bulbasaur'
 };
 
-function createCard() {
-    const html = /*html*/ `
-        <li>
-            <p>${pokemon.pokemon}</p>
-            <img src="${pokemon.url_image}">
-            <p>hp: ${pokemon.hp}</p>
-            <p> attack: ${pokemon.attack}</p>
-            <p>defense: ${pokemon.defense}</p>
-        </li>
-    `;
-    //I need to get this so that it becomes dom to be inserted
-    return createCardDom();
 
-    function createCardDom() {
-        const template = document.createElement('template');
-        template.innerHTML = html;
-        const dom = template.content;
-        return dom;
-    }
-}
 
 
 test('createCard function to render cards dynamically', assert => {
     //arrange
-
     const expected = /*html*/ `
         <li>
             <p>bulbasaur</p>
@@ -71,7 +51,7 @@ test('createCard function to render cards dynamically', assert => {
     `;
 
     //act
-    const result = createCard();
+    const result = createCard(pokemon);
     //assert
     assert.htmlEqual(result, expected);
 });
