@@ -12,11 +12,14 @@ export default function makeTemplate(pokeList){
     return template.content;
 }
 
-const makePokeList = document.getElementById('poke-list');
 
 //make for each loop to append each pokedex entry and render them in browser
 
 export function loadPokedex(allPokemon){
+    const makePokeList = document.getElementById('poke-list');
+    while(makePokeList.children.length > 0){
+        makePokeList.lastElementChild.remove();
+    }
     allPokemon.forEach(singlePokemon => {
         const dom = makeTemplate(singlePokemon);
         makePokeList.appendChild(dom);
