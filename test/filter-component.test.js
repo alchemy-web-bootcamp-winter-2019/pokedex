@@ -4,34 +4,30 @@ const test = QUnit.test;
 QUnit.module('filter by type 1');
 
 function buildTypeFilter() {
-    // const html = /*html*/`
-    //     <option value="">Filter by Type 1</option>
-    //     <option value="grass">grass</option>
-    //     <option value="fire">fire</option>
-    //     <option value="water">water</option> 
-    // `;
+    const html = /*html*/`
+        <option value="grass">grass</option> 
+    `;
 
-    // const template = document.createElement('template');
-    // template.innerHTML = html;
-    // const dom = template.content;
-    // return dom;
+    const template = document.createElement('template');
+    template.innerHTML = html;
+    const dom = template.content;
+    return dom;
 }
 
 
+// const type1List = ['grass', 'fire', 'water'];
 
 test('populate type 1 filter options dynamically', assert => {
     //arrange
-    const type1List = ['grass', 'fire', 'water'];
     
     const expected = /*html*/`
-        <option value="">Filter by Type 1</option>
         <option value="grass">grass</option>
-        <option value="fire">fire</option>
-        <option value="water">water</option> 
     `;
 
     //act
-    const result = buildTypeFilter(type1List);
+    const result = buildTypeFilter();
+    console.log('result', result);
+    console.log('expected', expected);
     //assert
-    assert.htmlEqual(result, expected)
+    assert.htmlEqual(result, expected);
 });
