@@ -1,15 +1,13 @@
 const typeFilterNode = document.getElementById('type-filter');
 
-
-
 export const types = ['normal', 'fighting', 'flying', 'poison', 'ground', 'rock',
     'bug', 'ghost', 'steel', 'fire', 'water', 'grass', 'electric', 'psychic',
     'ice', 'dragon', 'dark', 'fairy'
 ];
 
-export function buildTypeFilter(types) {
+export function getTypeOptions(type) {
     const html = /*html*/`
-        <option value="${types}">${types}</option> 
+        <option name="type" value="${type}">${type}</option> 
     `;
 
     const template = document.createElement('template');
@@ -18,4 +16,11 @@ export function buildTypeFilter(types) {
     return dom;
 }
 
-
+export default function buildTypeFilter(types) {
+    types.forEach(type => {
+        //create dom for the node
+        const dom = getTypeOptions(type);
+        //append to typeFilterNode
+        typeFilterNode.appendChild(dom);
+    });
+}

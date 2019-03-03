@@ -24,7 +24,6 @@ export function createCard(pokemon) {
 }
 
 export default function loadCards(pokedex) {
-    console.log('in loadCArds');
     pokedex.forEach(pokemon => {
         const dom = createCard(pokemon);
         cardBin.appendChild(dom);

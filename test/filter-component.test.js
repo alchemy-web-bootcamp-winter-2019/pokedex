@@ -10,14 +10,12 @@ test('populate type filter options dynamically', assert => {
     //arrange
     
     const expected = /*html*/`
-        <option value="grass">grass</option>
+        <option name="type" value="grass">grass</option>
     `;
 
     //act
     const result = getTypeOptions(types);
 
-    console.log('result', result);
-    console.log('expected', expected);
     //assert
     assert.htmlEqual(result, expected);
 });
