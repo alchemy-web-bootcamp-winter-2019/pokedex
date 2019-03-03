@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <title>POKEDEX</title>
+</head>
+<body>
+    <header>
+        <select id="list-sort">
+            <option value='' select disabled>Filter Options</option>
+            <option value='pokemon'>Pokemon</option>
+            <option value='weight'>Weight</option>
+            <option value='hp'>HP</option>
+            <option value='id'>ID</option>
+        </select>
+        <p>
+            <button id="previous"></button>
+            Page<span id="current-page"></span> of <span id="total-pages"></span>
+            <button id="next"></button>
+        </p>
+    </header>
+    <main>
+        <ul id="poke-list">
+        </ul>
+    </main>
+    <script type="module" src="../src/index.js"></script>
+</body>
+</html>

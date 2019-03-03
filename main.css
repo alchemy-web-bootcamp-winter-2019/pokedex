@@ -1,0 +1,26 @@
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 900px;
+    border: 2px solid black;
+    justify-content: center;
+    list-style-type: none;
+}
+
+li {
+    border: 1px solid red;
+    margin: 20px;
+    
+}
+
+img {
+    width: 150px;
+}
+
+h2 {
+    text-align: center;
+}
+
+#poke-list p {
+    text-align: center;
+}
