@@ -2,10 +2,11 @@
 
 const test = QUnit.test;
 QUnit.module('filter by type 1');
+const types = ['grass'];
 
-function buildTypeFilter() {
+function buildTypeFilter(types) {
     const html = /*html*/`
-        <option value="grass">grass</option> 
+        <option value="${types}">${types}</option> 
     `;
 
     const template = document.createElement('template');
@@ -14,8 +15,10 @@ function buildTypeFilter() {
     return dom;
 }
 
-
-// const type1List = ['grass', 'fire', 'water'];
+// const types = ['normal', 'fighting', 'flying', 'poison', 'ground', 'rock',
+//     'bug', 'ghost', 'steel', 'fire', 'water', 'grass', 'electric', 'psychic',
+//     'ice', 'dragon', 'dark', 'fairy'
+// ];
 
 test('populate type 1 filter options dynamically', assert => {
     //arrange
@@ -25,7 +28,7 @@ test('populate type 1 filter options dynamically', assert => {
     `;
 
     //act
-    const result = buildTypeFilter();
+    const result = buildTypeFilter(types);
     console.log('result', result);
     console.log('expected', expected);
     //assert
