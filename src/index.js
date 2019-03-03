@@ -4,4 +4,6 @@ import loadPaging from '../src/paging-component.js';
 
 loadPokedex(pokedex);
 
-loadPaging(80);
+loadPaging(pokedex.length, pagingOptions => {
+    console.log(pagingOptions);
+});
