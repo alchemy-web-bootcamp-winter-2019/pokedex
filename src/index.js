@@ -14,5 +14,6 @@ loadSort(sortOption => {
 
 loadPaging(pokedex.length, pagingOptions => {
     const pagedPokedex = pageArray(pokedex, pagingOptions);
+    
     loadPokedex(pagedPokedex);
 });
