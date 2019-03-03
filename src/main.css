@@ -8,9 +8,20 @@ body {
     background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=36785aff&noise=cf76cf&density=100&opacity=84);
 }
 
+.title {
+    margin-left: 100px;
+}
+
+main {
+    padding-top: 100px;
+}
+
 h1 {
-    text-align: center;
-    padding: 10px;
+    position: fixed;
+    font-family: fantasy;
+    font-size: 5em;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
 }
 
 ul {
@@ -42,4 +53,12 @@ li img {
 
 #pokename {
     text-transform: capitalize;
+}
+
+#task-bar {
+    position: fixed;
+    top: right;
+    width: 100%;
+    background-color: black;
+    padding: 10px;
 }
