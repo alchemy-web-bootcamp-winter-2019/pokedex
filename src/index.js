@@ -4,4 +4,4 @@ import loadPaging from '../src/paging-component.js';
 
 loadPokedex(pokedex);
 
-loadPaging(900);
+loadPaging(80);

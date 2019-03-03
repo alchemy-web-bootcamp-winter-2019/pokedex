@@ -5,7 +5,7 @@ const nextButton = document.getElementById('next');
 
 const PER_PAGE = 25;
 
-export default function loadPaging(totalCount){
-    const allPages = Math.ceil(totalCount / PER_PAGE);
-    totalPages.textContent = allPages;
+export default function loadPaging(allPokemon){
+    const perPagePokemon = Math.ceil(allPokemon / PER_PAGE);
+    totalPages.textContent = perPagePokemon;
 }
