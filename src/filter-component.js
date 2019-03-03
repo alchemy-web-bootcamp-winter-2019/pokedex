@@ -31,3 +31,10 @@ export default function buildTypeFilter(types) {
         console.log(chosenType);
     });
 }
+
+//I can grab the user's choice of type to filter by
+//I need to take that data and 
+    //filter the array for matches
+        //a new file. filter-compenent just builds and registers choices
+            //this file will do the sorting and will call the loadCard functon to render
+        //render matching card to dom
