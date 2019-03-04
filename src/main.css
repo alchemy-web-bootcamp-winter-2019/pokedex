@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+   
+}
+
+body {
+    background-image: url(http://api.thumbr.it/whitenoise-361x370.png?background=36785aff&noise=cf76cf&density=100&opacity=84);
+}
+
+.title {
+    margin-left: 100px;
+}
+
+main {
+    padding-top: 100px;
+}
+
+h1 {
+    position: fixed;
+    font-family: fantasy;
+    font-size: 5em;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px solid purple;
+    border-radius: 15px;
+    max-width: 75%;
+    margin: auto;
+    padding: 2%;
+    justify-content: center;
+}
+
+li {
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 10%;
+    min-width: 89px;
+    margin: 3px;
+    list-style: none;
+    padding: 3px;
+    justify-content: center;
+    text-align: center;
+}
+
+li img {
+    width: 100%;
+}
+
+#pokename {
+    text-transform: capitalize;
+}
+
+#task-bar {
+    position: fixed;
+    top: right;
+    width: 100%;
+    background-color: black;
+    padding: 10px;
+}
