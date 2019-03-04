@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+<body>
+    <header><h1>Pokedex</h1></header>
+    Sort by:
+    <select id="sort-select">
+        <option disabled selected></option>
+        <option value="pokemon">Name</option>
+        <option value="type_1">Type</option>
+        <option value="type_2">Secondary Type</option>
+        <option value="hp">HP</option>
+        <option value="attack">Attack</option>
+        <option value="defense">Defense</option>
+    </select>
+    <button id="previous-button">&lt; Previous</button>
+    Page <span id="current-page"></span> of <span id="total-pages"></span>
+    <button id="next-button">Next &gt;</button>
+    <main>
+        <ul id="card-list">
+        </ul>
+    </main>
+    <script type="module" src="src/index.js"></script>
+</body>
+</html>
