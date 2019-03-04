@@ -8,7 +8,6 @@ loadCards(pokedex);
 buildByTypeFilter(types, chosenTypes => {
     const filteredPokedex = filterPokedex(pokedex, chosenTypes);
     loadCards(filteredPokedex);
-    console.log('filteredPokedex', filteredPokedex);
 });
 
 //I have a callback of chosenTypes hanging around from buildTypeFilter's event listener
