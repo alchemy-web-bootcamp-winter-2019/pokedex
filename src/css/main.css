@@ -1,0 +1,54 @@
+@font-face {
+  font-family: 'pokemon-GB';
+  src: url('../../fonts/pokemon-GB.eot'); /* IE9 Compat Modes */
+  src: url('../../fonts/pokemon-GB.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('../../fonts/pokemon-GB.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../../fonts/pokemon-gb.woff') format('woff'), /* Pretty Modern Browsers */
+      url('../../fonts/pokemon-GB.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('../../fonts/pokemon-GB.svg#svgFontName') format('svg');
+}
+
+@font-face {
+  font-family: 'pokemon-solid';
+  src: url('../../fonts/pokemon-solid.eot'); /* IE9 Compat Modes */
+  src: url('../../fonts/pokemon-solid.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+      url('../../fonts/pokemon-solid.woff2') format('woff2'), /* Super Modern Browsers */
+      url('../../fonts/pokemon-solid.woff') format('woff'), /* Pretty Modern Browsers */
+      url('../../fonts/pokemon-solid.ttf')  format('truetype'), /* Safari, Android, iOS */
+      url('../../fonts/pokemon-solid.svg#svgFontName') format('svg');
+}
+
+html {
+  background: url('../../assets/tilted-pokeball.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body {
+  text-align: center;
+}
+
+label {
+  font-family: 'pokemon-GB';
+}
+
+footer {
+  font-family: 'pokemon-solid';
+  font-size: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+#user-form {
+  margin: 20%;
+}
+
+button {
+  font-family: 'pokemon-GB';
+  font-size: 8px;
+  width: 80px;
+  height: 20px;
+}
