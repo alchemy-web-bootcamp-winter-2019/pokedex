@@ -128,12 +128,15 @@ footer {
     display: flex;
     justify-content: center;
     font-family: 'pokemon-gb';
-    font-size: 9px;
+    font-size: 10px;
 }
 
 .button {
     font-family: 'pokemon-solid';
     font-size: 12px;
+    width: 80px;
+    height: 25px;
+    border: 1px solid black;
 }
 
 @-webkit-keyframes shake
