@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PokeDex</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <h1>PokeMon Go</h1>
+    <ul id="paging-ui">
+        <li><button id = "previous-button"> &ltprevious</button></li>
+        <p id = 'current-page'></p><p id = 'total-pages'></p>
+        <li><button id = "next-button">next&gt</button></li>
+        <li><input id = "choices-ui" placeholder="pokes per page"></input></li>
+    </ul>
+    <ul id='card-gallery'></ul>
+    <script type="module" src="../src/index.js"></script>
+</body>
+</html>
