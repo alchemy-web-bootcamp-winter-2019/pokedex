@@ -7,13 +7,19 @@ import filterPokemon from './filter-pokemon.js';
 
 loadPoke(data);
 
-loadFilter(filter => {
-    const filtered = filterPokemon(data, filter);
-    loadPoke(filtered);
-});
-
 loadPaging(data.length, pagingOptions => {
     const pagedData = pageArray(data, pagingOptions);
     loadPoke(pagedData);
 });
+
+loadFilter(filter => {
+    const filtered = filterPokemon(data, filter);
+    loadPoke(filtered);
+
+    loadPaging(filtered.length, pagingOptions => {
+        const pagedData = pageArray(filtered, pagingOptions);
+        loadPoke(pagedData);
+    });
+});
+
 
