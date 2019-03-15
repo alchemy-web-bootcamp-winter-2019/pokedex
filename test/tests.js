@@ -1,5 +1,6 @@
 import './html-equal.js';
 import './array-tests.js';
+import './filter-tests.js';
 import makePokeTemplate from '../src/make-poke-template.js';
 
 const test = QUnit.test;
