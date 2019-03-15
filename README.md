@@ -12,3 +12,6 @@ The file `data/pokedex.js` contains an array of pokemon
 1. Textual description: `Page 2 of 30`
 1. Disable buttons as appropriate (out of range)
 1. BONUS: Make per page a dropdown with a number of options
+
+
+Updated to make Pull Request.
